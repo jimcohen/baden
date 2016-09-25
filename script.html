@@ -1,0 +1,42 @@
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  
+    var input;
+    var t;
+    var last;
+    var positive;
+    var negative;
+    function key_up() {
+        window.clearTimeout(t);
+        t = window.setTimeout(search, 100);
+    }
+  
+    function search() {
+        var s = input.val().toLowerCase();
+        var zip = s.substring(0,3);
+        if(s.length == 0) {
+          $("li").show();
+          return;
+        }
+        var li;
+        if(s.startsWith(last)) {
+          li = positive;
+        } else {
+          li = $("li");
+        }
+        
+        positive = $("li").filter(function() { return this.dataset.zip.startsWith(zip) || this.dataset.name.startsWith(s);});
+        negative = $("li").not(positive);
+
+        positive.css({'display':'list-item'});
+        negative.css({'display':'none'});
+        
+        last = s;
+    }
+
+    $(function() {
+      input = $('<input type="text" value="">').keyup(key_up);
+      $("h1").append($('<span style="font-size:small">Suche</span>'));
+      $("h1").append(input);
+    });
+  </script>
