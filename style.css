@@ -1,0 +1,6 @@
+body{color:rgb(0, 75, 0);background:rgb(207, 255, 212);font-family:arial,sans-serif}
+h1{color:rgb(0, 120, 0);background:rgb(155, 255, 159)}
+a:link{color:rgb(0, 75, 0);background-color:transparent;text-decoration:underline}
+a:visited{color:rgb(0, 0, 0);background-color:transparent;text-decoration:underline}
+a:hover{color:rgb(0, 0, 0);background-color:transparent;text-decoration:none}
+a:active{color:rgb(0, 0, 0);background-color:transparent;text-decoration:none}
