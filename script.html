@@ -27,16 +27,20 @@
         
         positive = $("li").filter(function() { return this.dataset.zip.startsWith(zip) || this.dataset.name.startsWith(s);});
         negative = $("li").not(positive);
-
         positive.css({'display':'list-item'});
         negative.css({'display':'none'});
         
         last = s;
     }
-
+    
+    function preload() {
+      $("li").filter(function() { return this.dataset.zip && this.dataset.name; });
+    }
+    
     $(function() {
       input = $('<input type="text" value="">').keyup(key_up);
-      $("h1").append($('<span style="font-size:small">Suche</span>'));
-      $("h1").append(input);
+      $("h4").append($('<span style="font-size:small">Suche</span>'));
+      $("h4").append(input);
+      window.setTimeout(preload,50);
     });
   </script>

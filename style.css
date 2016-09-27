@@ -1,6 +1,13 @@
-body{color:rgb(0, 75, 0);background:rgb(207, 255, 212);font-family:arial,sans-serif}
-h1{color:rgb(0, 120, 0);background:rgb(155, 255, 159)}
-a:link{color:rgb(0, 75, 0);background-color:transparent;text-decoration:underline}
-a:visited{color:rgb(0, 0, 0);background-color:transparent;text-decoration:underline}
-a:hover{color:rgb(0, 0, 0);background-color:transparent;text-decoration:none}
-a:active{color:rgb(0, 0, 0);background-color:transparent;text-decoration:none}
+body.green{color:rgb(0, 75, 0);background:rgb(207, 255, 212);font-family:arial,sans-serif}
+body.green h1{color:rgb(0, 120, 0);background:rgb(155, 255, 159)}
+body.green a:link{color:rgb(0, 75, 0);background-color:transparent;text-decoration:underline}
+body.green a:visited{color:rgb(0, 0, 0);background-color:transparent;text-decoration:underline}
+body.green a:hover{color:rgb(0, 0, 0);background-color:transparent;text-decoration:none}
+body.green a:active{color:rgb(0, 0, 0);background-color:transparent;text-decoration:none}
+
+body.red{color:rgb(75, 0, 0);background:rgb(255, 207, 212);font-family:arial,sans-serif}
+body.red h1{color:rgb(120, 0, 0);background:rgb(255, 155, 159)}
+body.red a:link{color:rgb(75, 0, 0);background-color:transparent;text-decoration:underline}
+body.red a:visited{color:rgb(0, 0, 0);background-color:transparent;text-decoration:underline}
+body.red a:hover{color:rgb(0, 0, 0);background-color:transparent;text-decoration:none}
+body.red a:active{color:rgb(0, 0, 0);background-color:transparent;text-decoration:none}

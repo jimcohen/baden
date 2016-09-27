@@ -1,15 +1,18 @@
 <!doctype html>
-<html>
+<html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>{$title}</title>
-  <meta name="description" content="{$title}">
+  <title>{$question}</title>
+  <meta name="description" content="{$title} {$incorporationsshort}">
   <meta name="author" content="cvzi">
   <link rel="stylesheet" href="style.css">
 {$script}
 </head>
-<body>
+<body class="{$color}">
+  <h2>{$question}</h2>
+  <h4>{$answer}</h4>
   <h1>{$title}</h1>
+{$incorporationslong}
   <div>
     <ul>
 {$list}
